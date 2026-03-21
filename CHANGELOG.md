@@ -25,4 +25,8 @@
 ### removido:
 - sidebar.
 
-<small>Guilherme Santos da Silva.</small>
+## v3.5
+### adicionado:
+- Botões hover;
+- Posição errada do rodapé corrigida.
+<small>Thiago Ferreira da Luz.</small>
