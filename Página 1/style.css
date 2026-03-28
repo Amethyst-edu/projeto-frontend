@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #eee;
+  background: linear-gradient(135deg, #dff4ff 0%, #dbe8ff 45%, #efe1ff 100%);
   color: #111;
   min-height: 100vh;
   display: flex;
