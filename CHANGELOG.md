@@ -45,7 +45,8 @@
 - navbar menu movida para o topo do cabeçalho;
 - o gradiente, que antes era exclusivamente do cabeçalho agora é a cor do background do body;
 - cores dos botões e do conteúdo principal;
-- cor do cabeçalho para um roxo sólido
+- cor do cabeçalho para um roxo sólido;
+- conteúdo no article conteúdo principal. 
 
 ### removido:
 - arquivo js a pedido do professor.
