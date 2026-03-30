@@ -51,7 +51,7 @@ a {
 .menu {
   margin-bottom: 10px;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -87,6 +87,7 @@ a {
 }
 
 .destaque {
+  align-self: center;
   height: 150px;
   background-color: #fff;
   padding: 20px;
@@ -189,4 +190,62 @@ a {
   }
 
   
+}
+
+/*custom styles (gmd.html)*/
+.body-custom {
+  font-family: 'inter', sans-serif;
+  background-color: #eee;
+  color: #111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topo-custom {
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #eee;
+  text-align: center;
+  background-color: #71e;
+  z-index: 10;
+}
+
+.destaque-noflex { 
+  align-self: center;
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #21e;
+  margin-bottom: 20px;
+  background: radial-gradient(circle at 100% 100%, #eee, #def);
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.destaque-noflex ol li {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.destaque-noflex img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.destaque-noflex a {
+  color: #2a4b8d;
+}
+
+.destaque-noflex video {
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  height: 220px;
+  width: auto;
 }
