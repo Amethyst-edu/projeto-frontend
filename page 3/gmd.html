@@ -46,22 +46,52 @@
         <h2>Curiosidades:</h2><br>
         <ol>
             <li style="margin-top: 0px;">Geometry Dash é uma cópia do descontinuado jogo da Fluke Games "The Impossible Game", que tinha o mesmo conceito de jogabilidade e visuais semelhantes, tendo também um editor.</li>
-            <img src="media/ImpossibleGame.jpg" alt="The Impossible Game banner" style="width: 60%; height: auto; border-radius: 10px;">
+            <img src="media/ImpossibleGame.jpg" alt="The Impossible Game banner" style="width: 30%; height: auto; border-radius: 10px;">
             <li>Parte da comunidade de Geometry Dash jogam e fazem mapas tão difíceis que foram feitos sites chamados de "demonlists" que listam os níveis mais difíceis do jogo. Esses sites costumam contar com moderação rigorosa e alguns com regras específicas, como o site que é mais levado a sério pela comunidade, o <a href="https://www.pointercrate.com/demonlist/" target="_blank">Pointercreate</a>, que exige que o mapa esteja postado publicamente no servidor e que seja verificado, isto é, completado com prova por pelo menos um jogador sem o uso de hacks que interfiram na jogabilidade.</li>
-            <li>"Nine Circles" de Zobros é um nível icônico por ser o que mais inspirou outros níveis na comunidade. Com sua decoração única e o efeito de cores vermelhas pulsando freneticamente no drop da música, fazer remakes desse nível se tornou uma tendência entre os criadores de níveis.</li>
-            <!--por vídeos do drop de Nine Circles e seus remakes-->
+            <li>"Nine Circles" de Zobros é um nível icônico por ser o que mais inspirou outros níveis na comunidade. Com sua decoração única e o efeito de cores vermelhas pulsando freneticamente no drop da música, fazer remakes desse nível se tornou uma tendência entre os criadores de níveis.</li><br>
+            <h3>Nine Circles</h3>
+            <video controls>
+                <source src="media/nc.mp4" type="video/mp4">
+                Trecho da wave de Nine Circles. Seu navegador não suporta o formato de vídeo.
+            </video>
+            <br><h3>Fairydust</h3>
+              <video src="media/fairydust.mp4" controls>Trecho do cubo e wave de Fairydust.</video>
+            <br><h3>Sakupen Circles</h3>
+              <video src="media/skupen.mp4" controls>Trecho do cubo e wave de Sakupen circles.</video>
+            <br><h3>Sonic Wave</h3>
+              <video src="media/sonicwave.mp4" controls>Trecho da ball e wave de Sonicwave.</video>
             <li>No modo plataforma, o cubo faz uma animação ao pular que envolve esticar o seu sprite, que é possível recriar com css.</li>
-            <div style="width: 100%; display: flex; gap: 40%; margin-top: 60%; justify-content: center; border-bottom: 4px solid; border-image: linear-gradient(to right, transparent, #71e, transparent) 1;">
-            <img src="media/cube1.png" alt="Cubo1 de Geometry Dash, cores padrão" class="defaultcube" style="width: 20%; height: auto;">
+            <section class="jump">
             <img src="media/cube50.png" alt="Cubo50 de Geometry Dash, cores cinza-claro e branco"  class="rarecube" style="width: 20%; height: auto;">
+            </section> <br>
+            <p>O keyframe utilizado nesta animação foi:</p>
+            <div class="destaque-noflex" style="border: 1px solid #eee;">
+              @keyframes jump { <br>
+                0% { <br>
+                  transform: translateY(0) scale(1, 1); <br>
+                } 50% { <br>
+                  transform: translateY(-200%)  scale(0.8, 1.3); <br>
+                  animation-timing-function: ease-out; <br>
+                } 80% { <br>
+                  transform: translateY(-100%) scale(1.2, 0.9); <br>
+                  animation-timing-function: ease-in; <br>
+                } 100% {  <br>
+                  transform: translateY(0) scale(1, 1); <br>
+                  animation-timing-function: ease-in; <br>
+                } <br>
+              } 
             </div>
             <li>O nível customizado mais antigo disponível no jogo é "1stlevel" de TheRealStorm, seu id é 128. Robtop afirma que os níveis com ids mais antigos que esse foram criados por ele durante o desenvolvimento para testes. Mesmo assim, ainda existem boatos da própria comunidade de que alguns deles foram feitos por criadores, mas que foram deletados posteriormente, ficando inacessíveis.</li>
         </ol>
     </div>
   </section>
+
+    <footer class="rodape">
+    <p>&copy; Gamecurio</p>
+  </footer>
+
 </div></body>
 </html>
-
 <!-- adicionar ao final do main.css para customização completa da página:
  
 /*custom styles (gmd.html)*/
