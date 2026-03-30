@@ -285,3 +285,18 @@ a {
   border-bottom: 4px solid;
   border-image: linear-gradient(to right, transparent, #71e, transparent) 1;
 }
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+.body-custom {
+  animation: entrada 0.8s ease-out forwards;
+}
