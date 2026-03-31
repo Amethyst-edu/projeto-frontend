@@ -12,3 +12,7 @@
 - Imagem alterada para o jogo;
 - Texto sobre as informações escrito e padronizado com a página main;
 - Gradiente leve no background;
+
+### v4
+- Alterações no design da página;
+- Responsividade aprimorada;
