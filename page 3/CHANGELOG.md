@@ -19,3 +19,9 @@ Guilherme Santos da Silva
 
 ### removido:
 - um dos cubos para organização.
+
+## v3
+### modificado:
+- posição da descrição;
+- pequenos ajustes de responsividade;
+- mais 3 curiosidades.

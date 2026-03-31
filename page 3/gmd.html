@@ -23,24 +23,29 @@
         </nav>
   </header>
 
-  <article class="destaque" style="width: 92%; border: 1px solid #21e;">
-        <img src="media/gdlogo.jpg" alt="gd-logo" class="lupa" style="border-radius: 10px;">
-    
-        <div class="destaque-texto">
+
+ 
+        <div class="destaque" style="padding: 0px; border: 0px; background-color: transparent; box-shadow: none; width: 90%; height: auto;">
+        <img src="media/gdlogo.jpg" alt="gd-logo" class="applogo">
+        <div  class="destaque-noflex" style="padding: 0px; margin-bottom: 0px; margin-right: 10px; width: 80%; border: 0px; box-shadow: none; text-align: right;">
             <h1>Geometry Dash</h1>
             <small><p>
                 <strong>Disponível para:</strong> PC (Steam/Windows) e Mobile (iOS/Apple App Store, Android/Google Play Store, and Amazon Appstore)<br>
             </p></small>
-        </div>
-  </article>
+        </div></div>
 
-  <section class="destaque-noflex">
+
+  <article class="destaque-noflex" style="width: 92%; height: auto; border: 1px solid #21e;">
+
+  <section class="destaque-texto">
     <div class="destaque-texto">
         <h1>Descrição:</h1><br>
         <p>Geometry Dash é um jogo de plataforma rítmico índie desenvolvido pela RobTop Games. O objetivo do jogo é controlar um pequeno cubo e navegar por níveis cheios de obstáculos. Os jogadores devem pular, voar e evitar obstáculos para completar cada nível. O jogo é conhecido por sua dificuldade desafiadora e pela comunidade ativa que cria níveis personalizados.</p>
     </div>
   </section>
-  <section class="destaque-noflex">
+  </article>
+  
+  <div class="destaque-noflex">
     <div class="destaque-texto">
         <h1>Curiosidades:</h1><br>
           <h2>Geometry Dash é uma cópia</h2>
@@ -49,7 +54,7 @@
             
           <h2>Demonlists</h2>
             <p>Parte da comunidade de Geometry Dash jogam e fazem mapas tão difíceis que foram feitos sites chamados de "demonlists" que listam os níveis mais difíceis do jogo. Esses sites costumam contar com moderação rigorosa e alguns com regras específicas, como o site que é mais levado a sério pela comunidade, o <a href="https://www.pointercrate.com/demonlist/" target="_blank">Pointercreate</a>, que exige que o mapa esteja postado publicamente no servidor e que seja verificado, isto é, completado com prova por pelo menos um jogador sem o uso de hacks que interfiram na jogabilidade.</p>
-            
+            <br>
           <h2>Nine Circles</h2>
             <p>"Nine Circles" de Zobros é um nível icônico por ser o que mais inspirou outros níveis na comunidade. Com sua decoração única e o efeito de cores vermelhas pulsando freneticamente no drop da música, fazer remakes desse nível se tornou uma tendência entre os criadores de níveis.</p><br>
             
@@ -75,9 +80,9 @@
             
           <h2>Pulo modo plataforma</h2>
             <p>No modo plataforma, o cubo faz uma animação ao pular que envolve esticar o seu sprite, que é possível recriar no css, que é usado para páginas web.</p>
-            <section class="jump">
+            <div class="jump-align"><section class="jump">
             <img src="media/cube4.png" alt="Cubo50 de Geometry Dash, cores cinza-claro e branco"  class="rarecube" style="width: 20%; height: auto;">
-            </section> <br>
+            </section></div> <br>
             <p>O keyframe utilizado nesta animação foi:</p>
             <div class="destaque-noflex" style="border: 1px solid #eee;">
               @keyframes jump { <br>
@@ -87,20 +92,30 @@
                   transform: translateY(-200%)  scale(0.8, 1.3); <br>
                   animation-timing-function: ease-out; <br>
                 } 80% { <br>
-                  transform: translateY(-100%) scale(1.2, 0.9); <br>
+                  transform: translateY(-80%) scale(1.2, 0.9); <br>
                   animation-timing-function: ease-in; <br>
                 } 100% {  <br>
                   transform: translateY(0) scale(1, 1); <br>
-                  animation-timing-function: ease-in; <br>
+                  animation-timing-function: linear; <br>
                 } <br>
               } 
             </div>
-
+            <br>
           <h2>1st level</h2>
             <p>O nível customizado mais antigo disponível no jogo é "1st level" de TheRealStorm, seu id é 128. Robtop afirma que os níveis com ids mais antigos que esse foram criados por ele durante o desenvolvimento para testes. Mesmo assim, ainda existem boatos da própria comunidade de que alguns deles foram feitos por criadores, mas que foram deletados posteriormente, ficando inacessíveis.</p>
-        
+            <br>
+          <h2>Linguagem de programação</h2>
+            <p>Geometry Dash é programado em C++ usando a engine de desenvolvimento de jogos chamada "Cocos2d-x".</p>
+            <br>
+          <h2>Versão 2.2</h2>
+            <p>A versão 2.2 de Geometry Dash, lançada em 2023, foi a atualização mais aguardada do jogo, apesar de levar longos 7 anos para ser desenvolvida, foi a atualização que mais revolucionou o editor, trazendo novas mecânicas e funcionalidades, fazendo o jogo voltar a fama que tinha no lançamento da 1.9, 2.0 e seus spin-offs.</p>
+            <br>
+          <h2>Green users</h2>
+            <p>Nas primeiras versões do jogo, os usuários podiam comentar e criar níveis sem a necessidade de uma conta, e eles eram conhecidos como "green users", pois os usuários sem uma conta podiam escolher seu username, porém aperecia em verde até criar uma conta.</p>
+            <img src="media/nomeverde.png" alt="página de busca de níveis online, mostrando um usuário com nome em verde" class="impossible" style="border-radius: 0;">
+
     </div>
-  </section>
+  </div>
 
     <footer class="rodape">
     <p>&copy; Gamecurio</p>
@@ -119,6 +134,13 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-size: clamp(12px, 2vw, 30px);
+}
+
+.applogo {
+  width: 20%;
+  height: auto;
+  border-radius: 1%;
 }
 
 .topo-custom {
@@ -134,6 +156,7 @@
 }
 
 .destaque-noflex { 
+  animation: entrada 0.8s ease-out forwards;
   align-self: center;
   width: 90%;
   height: auto;
@@ -146,11 +169,6 @@
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-.destaque-noflex ol p {
-  margin-left: 15px;
-  margin-top: 20px;
-}
-
 .destaque-noflex img {
   display: block;
   margin-left: auto;
@@ -161,32 +179,80 @@
   color: #2a4b8d;
 }
 
+.videogrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  margin-bottom: 10%;
+}
+
 .destaque-noflex video {
   display: block;
   margin-left: auto; 
   margin-right: auto;
-  height: 220px;
-  width: auto;
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
 }
 
 @keyframes jump {
   0% { 
     transform: translateY(0) scale(1, 1); 
   } 50% {
-    transform: translateY(-200%)  scale(0.8, 1.3);
+    transform: translateY(-200%)  scale(0.8, 1.2);
     animation-timing-function: ease-out;
   } 80% {
-    transform: translateY(-100%) scale(1.2, 0.9);
+    transform: translateY(-80%) scale(1.2, 0.9);
     animation-timing-function: ease-in;
   } 100% {
     transform: translateY(0) scale(1, 1);
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
   }
 }
 
 .rarecube {
-  animation: jump 0.5s infinite, squish 0.5s infinite;
+  animation: jump 0.5s infinite;
   transform-origin: bottom;
+}
+
+.destaque-noflex h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.jump {
+  animation: entrada 0.8s ease-out forwards;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-top: 20%;
+  align-self: center;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, transparent, #71e, transparent) 1;
+}
+
+.jump-align {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+h1 h2 h3 h4 p {
+  animation: entrada 0.8s ease-out forwards;
+}
+
+.impossible {
+  width: 40%; height: auto; border-radius: 10px; margin-bottom: 20px;
 }
 
 -->

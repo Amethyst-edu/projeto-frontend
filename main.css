@@ -106,7 +106,7 @@ h1, h2, h3 {
 }
 
 .lupa {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 
@@ -202,6 +202,15 @@ h1, h2, h3 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+.applogo {
+  width: 80px;
+  height: auto;
+  border-radius: 3%;
+  margin-left: 10px;
+  animation: entrada 0.8s ease-out forwards;
 }
 
 .topo-custom {
@@ -217,6 +226,7 @@ h1, h2, h3 {
 }
 
 .destaque-noflex { 
+  animation: entrada 0.8s ease-out forwards;
   align-self: center;
   width: 90%;
   height: auto;
@@ -227,11 +237,6 @@ h1, h2, h3 {
   background: radial-gradient(circle at 100% 100%, #eee, #def);
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
-}
-
-.destaque-noflex ol li {
-  margin-left: 15px;
-  margin-top: 20px;
 }
 
 .destaque-noflex img {
@@ -247,7 +252,7 @@ h1, h2, h3 {
 .videogrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10%;
+  gap: 5%;
   margin-bottom: 10%;
 }
 
@@ -267,11 +272,11 @@ h1, h2, h3 {
     transform: translateY(-200%)  scale(0.8, 1.2);
     animation-timing-function: ease-out;
   } 80% {
-    transform: translateY(-100%) scale(1.2, 0.9);
+    transform: translateY(-80%) scale(1.2, 0.9);
     animation-timing-function: ease-in;
   } 100% {
     transform: translateY(0) scale(1, 1);
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
   }
 }
 
@@ -282,17 +287,23 @@ h1, h2, h3 {
 
 .destaque-noflex h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .jump {
-  width: 50%;
+  animation: entrada 0.8s ease-out forwards;
+  width: 40%;
   height: auto;
   display: block;
-  margin-top: 25%;
+  margin-top: 20%;
   align-self: center;
   border-bottom: 4px solid;
   border-image: linear-gradient(to right, transparent, #71e, transparent) 1;
+}
+
+.jump-align {
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes entrada {
@@ -311,13 +322,5 @@ h1 h2 h3 h4 p {
 }
 
 .impossible {
-  width: 70%; height: auto; border-radius: 10px;
-}
-
-input[type="text"], input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 40%; height: auto; border-radius: 10px; margin-bottom: 20px;
 }
