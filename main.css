@@ -19,7 +19,7 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
-a {
+.topo a {
   font-family: Arial, sans-serif;
   text-decoration: underline;
   color: #eee
@@ -42,6 +42,7 @@ a {
   z-index: 10;
 }
 
+
 .logo-area h1 {
   font-size: 2rem;
   border-radius: 5px;
@@ -52,7 +53,6 @@ a {
   margin-bottom: 10px;
   display: flex;
   gap: 20px;
-  justify-content: center;
 }
 
 .container {
@@ -121,7 +121,7 @@ a {
 
 .card-link {
   display: block;
-  height: 100px;
+  height: auto;
   background-color: #fff;
   padding: 15px;
   border: 2px solid #ccc;
@@ -255,7 +255,7 @@ a {
   0% { 
     transform: translateY(0) scale(1, 1); 
   } 50% {
-    transform: translateY(-200%)  scale(0.8, 1.3);
+    transform: translateY(-200%)  scale(0.8, 1.2);
     animation-timing-function: ease-out;
   } 80% {
     transform: translateY(-100%) scale(1.2, 0.9);
@@ -297,6 +297,11 @@ a {
   }
 }
 
-.body-custom {
+h1 h2 h3 h4 p {
   animation: entrada 0.8s ease-out forwards;
 }
+
+.impossible {
+  width: 400px; height: auto; border-radius: 10px;
+}
+
