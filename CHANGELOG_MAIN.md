@@ -52,3 +52,10 @@
 - arquivo js a pedido do professor.
 
 <small>Guilherme Santos da Silva.</small>
+
+## v6 (pulei um numero por engano)
+### adicionado:
+- página de login;
+- página de registro.
+
+<small>Guilherme Santos da Silva.</small>
