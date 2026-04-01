@@ -197,7 +197,6 @@ h1, h2, h3 {
 /*custom styles (gmd.html)*/
 .body-custom {
   font-family: 'inter', sans-serif;
-  background-color: #eee;
   color: #111;
   min-height: 100vh;
   display: flex;
