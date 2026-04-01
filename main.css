@@ -252,7 +252,7 @@ h1, h2, h3 {
 .videogrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5%;
+  gap: 10%;
   margin-bottom: 10%;
 }
 
